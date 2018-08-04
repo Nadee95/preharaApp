@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style ="position: relative;"  padding>
+  <h1>Asala Perahara</h1>
+    <p style="font-size: 25px">
+      The month of July which is also called “ Esala ”, is  considered as a month of celebrations and festivity among most of Sri Lankans. It is also considered as the beginning of the rainy season for Sri Lankan up country. Since the 6th BC, Esala festival had been held to celebrate Buddha's special life events 
+    </p>
+    <button ion-button (click)="btnClick()">Read more>> </button>
+  <ion-slides>
+
+      <ion-slide *ngFor="let img of images">  
+        <img style="" src="assets/imgs/{{img}}" class="thumb-img">
+      </ion-slide>
+  </ion-slides>  
+
+  
+   
+
+    
+  
+  
+</ion-content>

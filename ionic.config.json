@@ -1,0 +1,7 @@
+{
+  "name": "perahara",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
