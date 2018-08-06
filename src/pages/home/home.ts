@@ -9,15 +9,19 @@ import { RandoliPage } from '../randoli/randoli'
 export class HomePage {
   @ViewChild(Slides) slides: Slides;
   
-	images = ['01.jpg','04.jpg','05.jpg'] ;
+	images = ['01.jpg','14.jpg','15.png','17.png'] ;
   constructor(public navCtrl: NavController) {
     
   }
   ngAfterViewInit() {
-    this.slides.startAutoplay();
+
+
   }
 
   btnClick(){
     this.navCtrl.push(RandoliPage)
   }
+
+
+
 }
