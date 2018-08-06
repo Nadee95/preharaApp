@@ -5,20 +5,78 @@
 </ion-header>
 
 <ion-content  >
+  
+  <ion-fab right edge>
+    <button ion-fab mini><ion-icon name="share"></ion-icon></button>
+    <ion-fab-list>
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
 
-  <h1>Asala Perahara</h1>
-    <p style="font-size: 25px">
-      The month of July which is also called “ Esala ”, is  considered as a month of celebrations and festivity among most of Sri Lankans. It is also considered as the beginning of the rainy season for Sri Lankan up country. Since the 6th BC, Esala festival had been held to celebrate Buddha's special life events 
-    </p>
-    <button ion-button (click)="btnClick()">Read more>> </button>
+  <ion-list>
 
-  <ion-slides   autoplay="3000" loop="true" speed="1000" class="slides" pager="true" >
-      <ion-slide *ngFor="let img of images">  
-        <img style="" src="assets/imgs/{{img}}" class="thumb-img">
-      </ion-slide>
-  </ion-slides>  
+    <ion-card>
+      <ion-slides   autoplay="3000" loop="true" speed="1000" class="slides" pager="true" >
+          <ion-slide *ngFor="let img of images">  
+            <img style="" src="assets/imgs/{{img}}" class="thumb-img">
+          </ion-slide>
+      </ion-slides>  
+      <ion-card-content>
+        <ion-card-title>
+          Asala Perahara
+      </ion-card-title>
+      <p >
+        The month of July which is also called “ Esala ”, is  considered as a month of celebrations and festivity among most of Sri Lankans. It is also considered as the beginning of the rainy season for Sri Lankan up country. Since the 6th BC, Esala festival had been held to celebrate Buddha's special life events 
+      </p>
+
+       <button ion-button (click)="btnClick()">Read more>> </button>
+      </ion-card-content>
+    </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Explore Nearby
+    </ion-card-header>
+
+    <ion-list>
+      <button ion-item>
+        <ion-icon name="cart" item-start></ion-icon>
+        Shopping
+      </button>
+
+      <button ion-item>
+        <ion-icon name="medical" item-start></ion-icon>
+        Hospital
+      </button>
+
+      <button ion-item>
+        <ion-icon name="cafe" item-start></ion-icon>
+        Cafe
+      </button>
+
+      <button ion-item>
+        <ion-icon name="paw" item-start></ion-icon>
+        Dog Park
+      </button>
+
+      <button ion-item>
+        <ion-icon name="beer" item-start></ion-icon>
+        Pub
+      </button>
+
+      <button ion-item>
+        <ion-icon name="planet" item-start></ion-icon>
+        Space
+      </button>
+
+    </ion-list>
+  </ion-card>
 
 
+  </ion-list>
 
 </ion-content>
 

@@ -15,7 +15,6 @@ export class HomePage {
   }
   ngAfterViewInit() {
 
-
   }
 
   btnClick(){
