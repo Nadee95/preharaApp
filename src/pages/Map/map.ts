@@ -1,7 +1,8 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
-
+import { PopoverController } from 'ionic-angular';
+import { MapLayerComponent } from '../../components/map-layer/map-layer';
 declare var google;
 var  day='Map loaded..';
 
@@ -18,7 +19,7 @@ export class MapPage {
   kmlLayer: any;
 
 //public navCtrl: NavController
-  constructor(public navCtrl:NavController,private toastCtrl: ToastController) {
+  constructor(public navCtrl:NavController,private toastCtrl: ToastController,public popoverCtrl: PopoverController) {
 
   }
   ionViewDidLoad(){
@@ -33,8 +34,11 @@ export class MapPage {
       zoom: 16,
       center: {lat: 7.2960452, lng: 80.6360764}
     });
+    this.map.data.loadGeoJson( 'assets/geo/d1.geojson');
+}
+
     
-  }
+  
 
 
 
@@ -211,7 +215,16 @@ export class MapPage {
 
   }
 
-  
+  presentPopover(myEvent) {
+    let popover = this.popoverCtrl.create(MapLayerComponent);
+    popover.present({
+      ev: myEvent
+    });
+
+    popover.onDidDismiss(data =>{
+      console.log(data.title);
+    })
+  }
 
 
 }

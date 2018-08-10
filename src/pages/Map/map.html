@@ -1,16 +1,24 @@
+
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      Map
     </ion-title>
   </ion-navbar>
 </ion-header>
 
+
+  
+  
+  
 <ion-content>
+		<ion-fab>
+				<button ion-fab icon-only (click)="presentPopover($event)">
+						<ion-icon name="funnel"></ion-icon>
+					  </button>	
+		</ion-fab>
 	
   <div #map id="map"></div>
-
-
 			<ion-item class="col">
 					<div class="row">
 						<button (click)="btn01Click()" ion-button  icon-end color="dark" >

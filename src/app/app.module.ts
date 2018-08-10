@@ -12,6 +12,8 @@ import { RandoliPageModule} from '../pages/randoli/randoli.module';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { MapLayerComponent } from '../components/map-layer/map-layer';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -19,6 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MapPage,
     HomePage,
     TabsPage,
+    MapLayerComponent
 
   ],
   imports: [
@@ -33,6 +36,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MapPage,
     HomePage,
     TabsPage,
+    MapLayerComponent
   ],
   providers: [
     StatusBar,

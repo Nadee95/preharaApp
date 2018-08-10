@@ -1,0 +1,32 @@
+<!-- Generated template for the MapLayerComponent component -->
+<form [formGroup]="todo" (ngSubmit)="logForm()">
+  <ion-item>
+    <ion-label>Todo</ion-label>
+    <ion-input type="text" formControlName="title"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Description</ion-label>
+    <ion-textarea formControlName="description"></ion-textarea>
+  </ion-item>
+  <ion-list radio-group formControlName="route">
+      <ion-list-header>
+        Language
+      </ion-list-header>
+    
+      <ion-item>
+        <ion-label>Go</ion-label>
+        <ion-radio checked="true" value="go"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Rust</ion-label>
+        <ion-radio value="rust"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Python</ion-label>
+        <ion-radio value="python" disabled="true"></ion-radio>
+      </ion-item>
+    </ion-list>
+  <button ion-button (click)="submit()" [disabled]="!todo.valid">Submit</button>
+</form>
