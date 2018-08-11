@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { RandoliPageModule} from '../pages/randoli/randoli.module';
+import { ViewspotsPageModule} from '../pages/viewspots/viewspots.module';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -27,7 +28,8 @@ import { MapLayerComponent } from '../components/map-layer/map-layer';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    RandoliPageModule
+    RandoliPageModule,
+    ViewspotsPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

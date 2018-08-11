@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Slides } from 'ionic-angular';
 import { RandoliPage } from '../randoli/randoli'
+import { ViewspotsPage } from '../viewspots/viewspots';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -19,6 +20,10 @@ export class HomePage {
 
   btnClick(){
     this.navCtrl.push(RandoliPage)
+  }
+
+  viewspots(){
+    this.navCtrl.push(ViewspotsPage)
   }
 
 
