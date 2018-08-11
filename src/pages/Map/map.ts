@@ -27,7 +27,7 @@ export class MapPage {
 
   }
   
-  private buttonColor: string = "dark";//for change button color
+
 
   initMap(){
     this.map = new google.maps.Map(this.mapElement.nativeElement, {
