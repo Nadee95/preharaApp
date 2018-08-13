@@ -2,7 +2,19 @@ page-about {
 	.bg{
 		background: linear-gradient(to bottom, #cc0000 0 , #ff944d 	1);
 	}
+	.card-title{
+		position: relative;
+		font-size: 5rem;
+		color: white;
+	}
+
+	.card-subtitle{
+		position: relative;
+		font-size: 2rem;
+		color: white;
+	}
 }
+
 
 
 
