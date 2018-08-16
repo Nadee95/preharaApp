@@ -2,7 +2,40 @@ page-about {
 	.bg{
 		background: linear-gradient(to bottom, #cc0000 0 , #ff944d 	1);
 	}
+	.bg-image{
+		background-image: url("../../assets/imgs/back01.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 100%;
+	}
+	.card-title{
+		position: relative;
+		font-size: 5rem;
+		color: white;
+		background-color: rgba(0, 0, 0,0.2);
+	}
+
+	.card-subtitle{
+		position: relative;
+		font-size: 2rem;
+		color: white;
+		background-color: rgba(0, 0, 0,0.2);
+	}
+	.contact-wrapper {
+		position: absolute;
+		background-color: rgba(0, 0, 0,0.2);
+		font-size: 1.5rem;
+		color: white;
+	}
+	.id01{
+		position: relative;
+		font-size: 1rem;
+		color: black;	
+	}
+
+
 }
+
 
 
 
