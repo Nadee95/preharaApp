@@ -8,14 +8,7 @@ import { NavController } from 'ionic-angular';
 export class AboutPage {
 
   	constructor(public navCtrl: NavController) {
-  		this.myFunction();	
+
   	}
-
-
-    myFunction() { 
-        var data = "function testing...";
-        
-    }
-
 
 }

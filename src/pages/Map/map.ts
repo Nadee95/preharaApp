@@ -16,17 +16,35 @@ var  day='Map loaded..';
 export class MapPage {
   @ViewChild('map') mapElement: ElementRef;
   map: any;
-  kmlLayer: any;
+  d1 = new google.maps.Data();
+  d2 = new google.maps.Data();
+  d3 = new google.maps.Data();
+  d4 = new google.maps.Data();
+  d5 = new google.maps.Data();
+  d6= new google.maps.Data();
+  d7 = new google.maps.Data();
+  d8 = new google.maps.Data();
+  d9 = new google.maps.Data();
+  d10 = new google.maps.Data();
+  d11 = new google.maps.Data();
+  currentMap = this.d1;
 
 //public navCtrl: NavController
   constructor(public navCtrl:NavController,private toastCtrl: ToastController,public popoverCtrl: PopoverController) {
 
   }
   ionViewDidLoad(){
+    this.loadGeoJson();
     this.initMap();
 
   }
   
+  loadGeoJson(){
+    this.d1.loadGeoJson('/assets/geo/d1.geojson');
+    this.d2.loadGeoJson('/assets/geo/d2.json');
+    this.d3.loadGeoJson('/assets/geo/d3.json');
+    this.d4.loadGeoJson('/assets/geo/d4.json');
+  }
 
 
   initMap(){
@@ -34,13 +52,8 @@ export class MapPage {
       zoom: 16,
       center: {lat: 7.2960452, lng: 80.6360764}
     });
-    this.map.data.loadGeoJson( 'assets/geo/d1.geojson');
-}
-
-    
   
-
-
+}
 
   presentToast() {
     const toast = this.toastCtrl.create({
@@ -51,178 +64,24 @@ export class MapPage {
     toast.present();
   }
 
-  btn01Click(){
-    day='Day 1  Map loaded';
-    this.presentToast();
-    this.initMap();
-    this.kmlLayer = new google.maps.KmlLayer("https://perahara.000webhostapp.com/Day01.kml", {
-      suppressInfoWindows: false,
-      preserveViewport: false,
-    });
-    console.log(this.kmlLayer);
-    this.kmlLayer.setMap(this.map);
-
-  }
-
-  btn02Click(){
-  
-  day='Day 2  Map loaded';
-  this.presentToast();
-
-  this.initMap();
-    this.kmlLayer = new google.maps.KmlLayer("https://perahara.000webhostapp.com/Day02.kml", {
-      suppressInfoWindows: false,
-      preserveViewport: false,
-    });
-    console.log(this.kmlLayer);
-    this.kmlLayer.setMap(this.map);
-
-  }
-
-  btn03Click(){
-    
-    day='Day 3  Map loaded';
-    this.presentToast();
-
-    this.initMap();
-    this.kmlLayer = new google.maps.KmlLayer("https://perahara.000webhostapp.com/Day03.kml", {
-      suppressInfoWindows: false,
-      preserveViewport: false,
-    });
-    console.log(this.kmlLayer);
-    this.kmlLayer.setMap(this.map);
-
-  }
-
-  btn04Click(){
-
-    day='Day 4  Map loaded';
-    this.presentToast();
-
-    this.initMap();
-    this.kmlLayer = new google.maps.KmlLayer("https://perahara.000webhostapp.com/Day04.kml", {
-      suppressInfoWindows: false,
-      preserveViewport: false,
-    });
-    console.log(this.kmlLayer);
-    this.kmlLayer.setMap(this.map);
-
-  }
-
-  btn05Click(){
-
-    day='Day 5  Map loaded';
-    this.presentToast();
-
-    this.initMap();
-    this.kmlLayer = new google.maps.KmlLayer("https://perahara.000webhostapp.com/Day05.kml", {
-      suppressInfoWindows: false,
-      preserveViewport: false,
-    });
-    console.log(this.kmlLayer);
-    this.kmlLayer.setMap(this.map);
-
-  }
-
-  btn06Click(){
-
-
-    day='Day 6  Map loaded';
-    this.presentToast();
-
-    this.initMap();
-    this.kmlLayer = new google.maps.KmlLayer("https://perahara.000webhostapp.com/Day06.kml", {
-      suppressInfoWindows: false,
-      preserveViewport: false,
-    });
-    console.log(this.kmlLayer);
-    this.kmlLayer.setMap(this.map);
-
-  }
-
-  btn07Click(){
-
-    day='Day 7  Map loaded';
-    this.presentToast();
-
-    this.initMap();
-    this.kmlLayer = new google.maps.KmlLayer("https://perahara.000webhostapp.com/Day07.kml", {
-      suppressInfoWindows: false,
-      preserveViewport: false,
-    });
-    console.log(this.kmlLayer);
-    this.kmlLayer.setMap(this.map);
-
-  }
-
-  btn08Click(){
-
-    day='Day 8  Map loaded';
-    this.presentToast();
-
-    this.initMap();
-    this.kmlLayer = new google.maps.KmlLayer("https://perahara.000webhostapp.com/Day08.kml", {
-      suppressInfoWindows: false,
-      preserveViewport: false,
-    });
-    console.log(this.kmlLayer);
-    this.kmlLayer.setMap(this.map);
-
-  }
-
-  btn09Click(){
-
-    day='Day 9  Map loaded';
-    this.presentToast();
-
-    this.initMap();
-    this.kmlLayer = new google.maps.KmlLayer("https://perahara.000webhostapp.com/Day09.kml", {
-      suppressInfoWindows: false,
-      preserveViewport: false,
-    });
-    console.log(this.kmlLayer);
-    this.kmlLayer.setMap(this.map);
-
-  }
-
-  btn10Click(){
-
-    day='Day 10  Map loaded';
-    this.presentToast();
-
-    this.initMap();
-    this.kmlLayer = new google.maps.KmlLayer("https://perahara.000webhostapp.com/Day10.kml", {
-      suppressInfoWindows: false,
-      preserveViewport: false,
-    });
-    console.log(this.kmlLayer);
-    this.kmlLayer.setMap(this.map);
-
-  }
-
-  btn11Click(){
-
-    day='Day 11 Map loaded';
-    this.presentToast();
-
-    this.initMap();
-    this.kmlLayer = new google.maps.KmlLayer("https://perahara.000webhostapp.com/Day11.kml", {
-      suppressInfoWindows: false,
-      preserveViewport: false,
-    });
-    console.log(this.kmlLayer);
-    this.kmlLayer.setMap(this.map);
-
-  }
-
   presentPopover(myEvent) {
-    let popover = this.popoverCtrl.create(MapLayerComponent);
+    let popover = this.popoverCtrl.create(MapLayerComponent,{},{enableBackdropDismiss:false});
     popover.present({
       ev: myEvent
     });
 
-    popover.onDidDismiss(data =>{
-      console.log(data.title);
+    popover.onDidDismiss(datax =>{
+      console.log(datax);
+      if (datax.route == 'd1'){
+        this.currentMap.setMap(null);
+        this.d1.setMap(this.map);
+        this.currentMap=this.d1;
+      }else if(datax.route == 'd2'){
+        this.currentMap.setMap(null);
+        this.d2.setMap(this.map);
+        this.currentMap.setMap(this.d2);
+        
+      }
     })
   }
 
