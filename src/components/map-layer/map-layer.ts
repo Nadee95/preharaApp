@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { ViewController } from 'ionic-angular/navigation/view-controller';
+import { NavParams } from 'ionic-angular/navigation/nav-params';
 /**
  * Generated class for the MapLayerComponent component.
  *
@@ -13,15 +14,17 @@ import { ViewController } from 'ionic-angular/navigation/view-controller';
 })
 export class MapLayerComponent {
   private todo: FormGroup;
-
-  constructor(private formBuilder: FormBuilder, public viewCtrl: ViewController) {
+  private state: any;
+  constructor(private formBuilder: FormBuilder, public viewCtrl: ViewController, public navParams: NavParams) {
+    this.state=this.navParams.get('data');
     this.todo = this.formBuilder.group({
-      route: [this.d1, Validators.required]
+     // route: [this.state.route, Validators.required],
+      poi:[this.state.poi]
     });
 
   }
   logForm() {
-    console.log(this.todo.value.route)
+    console.log(this.todo.value)
   }
   submit() {
     this.viewCtrl.dismiss(this.todo.value);

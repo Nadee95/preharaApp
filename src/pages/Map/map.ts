@@ -3,8 +3,9 @@ import { NavController } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
 import { PopoverController } from 'ionic-angular';
 import { MapLayerComponent } from '../../components/map-layer/map-layer';
+
 declare var google;
-var  day='Map loaded..';
+
 
 
 @Component({
@@ -28,20 +29,25 @@ export class MapPage {
   d10 = new google.maps.Data();
   d11 = new google.maps.Data();
   currentMap = this.d1;
+  currentState: any={
+    //route:"d1",
+    poi:"true"
+  }
 
 //public navCtrl: NavController
   constructor(public navCtrl:NavController,private toastCtrl: ToastController,public popoverCtrl: PopoverController) {
 
   }
   ionViewDidLoad(){
-    this.loadGeoJson();
+   // this.loadGeoJson();
     this.initMap();
+   
 
   }
   
   loadGeoJson(){
     this.d1.loadGeoJson('/assets/geo/d1.geojson');
-    this.d2.loadGeoJson('/assets/geo/d2.json');
+    this.d2.loadGeoJson('/assets/geo/day2.geojson');
     this.d3.loadGeoJson('/assets/geo/d3.json');
     this.d4.loadGeoJson('/assets/geo/d4.json');
   }
@@ -52,12 +58,22 @@ export class MapPage {
       zoom: 16,
       center: {lat: 7.2960452, lng: 80.6360764}
     });
+
+    var kmlLayer = new google.maps.KmlLayer(" https://sites.google.com/site/peraharagis/Day02.kmz", {
+      preserveViewport: false,
+      map: this.map
+    });
+    kmlLayer.addListener('click', function(event) {
+      var content = event.featureData.infoWindowHtml;
+      var testimonial = document.getElementById('capture');
+      testimonial.innerHTML = content;
+    });
   
 }
 
   presentToast() {
     const toast = this.toastCtrl.create({
-      message: day,
+      message: "yo",
       duration: 3000,
       position: 'bottom'
     });
@@ -65,14 +81,32 @@ export class MapPage {
   }
 
   presentPopover(myEvent) {
-    let popover = this.popoverCtrl.create(MapLayerComponent,{},{enableBackdropDismiss:false});
+    let popover = this.popoverCtrl.create(MapLayerComponent,{data:this.currentState},{enableBackdropDismiss:false});
     popover.present({
       ev: myEvent
     });
 
     popover.onDidDismiss(datax =>{
-      console.log(datax);
-      if (datax.route == 'd1'){
+      this.currentState = datax;
+      if(!datax.poi){
+        
+         this.map.setOptions({styles: [
+          {
+            featureType: 'poi.business',
+            stylers: [{visibility: 'off'}]
+          },
+          {
+            featureType: 'transit',
+            elementType: 'labels.icon',
+            stylers: [{visibility: 'off'}]
+          }
+        ]
+      });
+        
+      }else{
+        this.map.setOptions({styles: null});
+      }
+     /* if (datax.route == 'd1'){
         this.currentMap.setMap(null);
         this.d1.setMap(this.map);
         this.currentMap=this.d1;
@@ -81,7 +115,7 @@ export class MapPage {
         this.d2.setMap(this.map);
         this.currentMap.setMap(this.d2);
         
-      }
+      }*/
     })
   }
 
