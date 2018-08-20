@@ -1,12 +1,12 @@
-    
 <ion-content>
-		<ion-fab>
-				<button ion-button (click)="presentModal()">
-						<ion-icon name="funnel"></ion-icon>Filter
-					  </button>	
-		</ion-fab>
-	
+  <ion-fab>
+      <button ion-button (click)="presentModal()">
+          <ion-icon name="funnel"></ion-icon>Filter
+        </button>
+        <button ion-button  (click)="getPosition()">
+            <ion-icon name="locate"></ion-icon>Location
+          </button>
+  </ion-fab>
   <div #map id="map"></div>
-  <div id="capture"></div>	
+  <div id="capture"></div>
 </ion-content>
-
