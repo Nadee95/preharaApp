@@ -1,0 +1,533 @@
+[
+	{
+		"Organization"	:	"District Disaster Management Centre Kandy",
+		"Contact"		:	[
+			{
+				"organization":"District Disaster Management Centre Kandy",
+				"position": "District Cooperative Director",
+				"name":      "I.A.K. Ranaweera",
+				"office":"081 2202697",
+				"mobile":"077 3957878"
+
+			},
+			{
+				"organization":"District Disaster Management Centre Kandy",
+				"position": " Cooperative District Coordinator",
+				"name":      " B.M.U.I.G.P. Lakshitha Bandara",
+				"mobile":" 071 3806028"
+
+			},
+			{
+				"organization":"District Disaster Management Centre Kandy",
+				"position": " Cooperative District Coordinator",
+				"name":      " D.M.B.P. Dissanayake",
+				"mobile":" 071 3774811"
+
+			},
+			{
+				"organization":"District Disaster Management Centre Kandy",
+				"position": " Cooperative District Coordinator",
+				"name":      " E.M.T.G. Thennakoon",
+				"mobile":" 071 3797101"
+
+			},
+			{
+				"organization":"District Disaster Management Centre Kandy",
+				"position"		: 	" Cooperative District Coordinator",
+				"name"			:   " D.G.M. Wickramasinghe",
+				"mobile"		:	" 071 3777079"
+
+			}
+
+		]
+	},
+
+	{
+		"Organization"	:	"Red Cross Society",
+		"Contact"		:	[
+			{
+				"organization":"Red Cross Society",
+				"position": " Executive Officer",
+				"name":      " Nalinda Nagolla",
+				"office":" 081 2222100",
+				"mobile":" 070 3628216"
+
+			}
+		]	
+	},
+
+	{
+		"Organization"	:	"Ayurvedic Corporation",
+		"Contact"		:	[
+			{
+				"organization":"Ayurvedic Corporation",
+				"position": " President",
+				"name":      " Dr. D.S. De Silva",
+				"mobile":" 077 7040456"
+
+			},
+			{
+				"organization":"Ayurvedic Corporation",
+				"position": " Tresurer",
+				"name":      " Dr. R.W. Nawarathne",
+				"mobile":" 071 4460548"
+
+			}
+		]
+	},
+	{
+		"Organization":"Health Services Delivery Organization",
+		"Contact"		:	[
+			{
+				"organization":"Health Services Delivery Organization",
+				"position": " President",
+				"name":      " Dr. D.S. De Silva",
+				"mobile":" 077 7040456"
+
+			}
+		]
+	},
+
+	{
+		"Organization":"Dhanvantari ayurveda hospital",
+		"Contact"		: [
+			{
+				"organization":"Dhanvantari ayurveda hospital",
+				"position": " President",
+				"name":      " Dr. P.G. Chandrasena",
+				"office":" 081 2491316",
+				"mobile":" 077 3637317"
+
+			},
+			{
+				"organization":"Dhanvantari ayurveda hospital",
+				"position": " Secretary",
+				"name":      " Chandrasiri Yaddehige",
+				"office":" 081 2226824",
+				"mobile":" 071 9948277"
+
+			}
+		]
+	},
+	{
+		"Organization":" St. John Ambulance Association and Brigade",
+		"Contact"		:[
+			{
+				"organization":" St. John Ambulance Association and Brigade",
+				"position": " Administrative Secretary",
+				"name":      " Ajith Dissanayake",
+				"mobile":" 077 7559944"
+
+			},
+			{
+				"organization":" St. John Ambulance Association and Brigade",
+				"position": " Cooperative District Commissioner",
+				"name":      " Aravinda Egodage",
+				"mobile":" 077 1262582"
+
+			},
+			{	
+				"organization":" St. John Ambulance Association and Brigade",
+				"position": " Cooperative District Commissioner",
+				"name":      " Amal Bandara Daskon",
+				"mobile":" 077 3064336"
+
+			}
+		]
+	},
+	{
+		"Organization":" National Dangerous Drugs Control Board",
+		"Contact"		:[
+			{
+				"organization":" National Dangerous Drugs Control Board",
+				"position": " District External Services Officer",
+				"name":      " T. Ariyarathne",
+				"office":" 081 2315504",
+				"mobile":"071 8544439"
+
+			}
+		]
+	},
+	{
+		"Organization":" Sri Lanka Police Kandy",
+		"Contact"		:[
+			{
+				"organization":" Sri Lanka Police Kandy",
+				"position": " ",
+				"name":      " C.R.L. Ranaweera",
+				"office":" 081 2225461",
+				"mobile":" 071 8592603"
+
+			},
+			{
+				"organization":" Sri Lanka Police Kandy",
+				"position": " ",
+				"name":      " H.M.I. Vipula Bandara",
+				"office":" 081 2225722",
+				"mobile":" 071 8591046"
+
+			},
+			{
+				"organization":" Sri Lanka Police Kandy",
+				"position": " ",
+				"name":      " K.M.S.P. Karunarathne",
+				"office":" 081 2222222",
+				"mobile":" 071 8056354"
+
+			}
+		]
+	},
+	{
+		"Organization":" Kandy Municipal Council",
+		"Contact"		:[
+			{
+				"organization":" Kandy Municipal Council",
+				"position": " Municipal Commissioner",
+				"name":      " Chandana Thennakoon",
+				"office":" 081 2223921",
+				"mobile":" 071 7810990"
+
+			}
+		]
+	},
+	{
+		"Organization":" Sri Lanka Army Kandy",
+		"Contact"		:[
+			{
+				"organization":" Sri Lanka Army Kandy",
+				"position": " Major General ",
+				"name":      " T.J. Nanayakkara",
+				"office":" 081 3836882"
+			},
+			{
+				"organization":"Sri Lanka Army Kandy",
+				"position": " Colonel",
+				"name":      " Sanath Aluvihare",
+				"mobile":" 076 6907182"
+			},
+			{
+				"organization":"Sri Lanka Army Kandy",
+				"position": " Lieutenant Colonel",
+				"name":      " D.C.A. Wickramasinghe",
+				"mobile":" 076 6907269"
+
+			},
+			{
+				"organization":"Sri Lanka Army Kandy",
+				"position": " Lieutenant Colonel",
+				"name":      " S. Wijesiriwardena",
+				"mobile":" 076 6911656"
+
+			}
+		]
+	},
+	{
+		"Organization":" Sri Lanka Navy Kandy",
+		"Contact"		:[
+			{
+				"organization":" Sri Lanka Navy Kandy",
+				"position": " Admiral",
+				"name":      " M.H.N. Peris",
+				"office":" 077 7557701",
+				"mobile":" 071 6887825"
+
+			},
+			{
+				"organization":" Sri Lanka Navy Kandy",
+				"position": " Commondore",
+				"name":      " P.T.T. Fernando",
+				"office":" 011 3818108",
+				"mobile":" 077 3051444"
+
+			},
+			{
+				"organization":" Sri Lanka Navy Kandy",
+				"position": " Lieutenant Commander",
+				"name":      " T.H.D.A. De Silva",
+				"office":" 011 2216900",
+				"mobile":" 070 3940439"
+
+			},
+			{
+				"organization":" Sri Lanka Navy Kandy",
+				"position": " Lieutenant Commander",
+				"name":      " T.R.C.B. Thennakoon",
+				"office":" 011 2216900",
+				"mobile":" 071 8203572"
+
+			},
+			{
+				"organization":" Sri Lanka Navy Kandy",
+				"position": " ",
+				"name":      " H.M.A. Bandara",
+				"mobile":" 071 9505301"
+
+			},
+
+			{
+				"organization":" Sri Lanka Navy Kandy",
+				"position": " ",
+				"name":      " P.G.R.P.W. Bandara",
+				"mobile":" 075 3306217"
+
+			},
+			{
+				"organization":" Sri Lanka Navy Kandy",
+				"position": " ",
+				"name":      " K.M.T.N. Kulathunga",
+				"mobile":" 071 7072338"
+
+			},
+			{
+				"organization":" Sri Lanka Navy Kandy",
+				"position": " ",
+				"name":      " R.S.B.K. Karunarathne",
+				"mobile":" 071 8569146"
+
+			},
+			{
+				"organization":" Sri Lanka Navy Kandy",
+				"position": " ",
+				"name":      " W.M.M.W.B. Weerasekara",
+				"office":" ",
+				"mobile":" 071 4252845"
+
+			}
+		]
+	},
+	{
+		"Organization":" Kandy Hospital",
+		"Contact"		:[
+			{
+				"organization":" Kandy Hospital",
+				"position": " Director",
+				"name":      " Dr. R.M.S.K. Rathnayake",
+				"office":" 081 2222137",
+				"mobile":" 077 2246001"
+
+			},
+			{
+				"organization":" Kandy Hospital",
+				"position": " ",
+				"name":      " S.M.B.B. Samarakoon",
+				"mobile":" 071 8254460"
+
+			},
+			{
+				"organization":" Kandy Hospital",
+				"position": " ",
+				"name":      " Nimal Dissanayaka",
+				"mobile":" 071 1054977"
+
+			},
+			{
+				"organization":" Kandy Hospital",
+				"position": " ",
+				"name":      " Lanka Dissanayaka",
+				"mobile":" 077 2265761"
+
+			},
+			{
+				"organization":" Kandy Hospital",
+				"position": " ",
+				"name":      " Anjula Karunarathne",
+				"mobile":" 071 8155710"
+
+			},
+			{
+				"organization":" Kandy Hospital",
+				"position": " ",
+				"name":      " K.A.I.J. Kariyawasam",
+				"mobile":" 071 1835005"
+
+			},
+			{
+				"organization":" Kandy Hospital",
+				"position": " ",
+				"name":      " Kamal Senevirathne",
+				"mobile":" 071 4430054"
+
+			},
+			{
+				"organization":" Kandy Hospital",
+				"position": " ",
+				"name":      " C.T. Wimalaweera",
+				"mobile":" 075 4867540"
+
+			},
+			{
+				"organization":" Kandy Hospital",
+				"position": " ",
+				"name":      " Gamini Samarathunga",
+				"mobile":" 071 6624515"
+
+			},
+			{
+				"organization":    " Kandy Hospital",
+				"position":       " ",
+				"name"    :        " A.S. Baddevithana",
+				"mobile"  :        " 077 7403416"
+
+			},
+			{
+				"organization":" Kandy Hospital",
+				"position": " ",
+				"name":      " D.M.S.R. Wijerathne",
+				"mobile":" 071 3516424"
+
+			},
+			
+			{
+				"organization":" Kandy Hospital",
+				"position": " ",
+				"name":      " Vinitha Walisundara",
+				"mobile":" 071 6651541"
+
+			},
+			{
+				"organization":" Kandy Hospital",
+				"position": " ",
+				"name":      " Dhammika Dasanayaka",
+				"office":" ",
+				"mobile":" 071 7986241"
+
+			},
+			{
+				"organization":" Kandy Hospital",
+				"position": " ",
+				"name":      " S. Wickramarachchi",
+				"mobile":" 071 5379935"
+
+			},
+			{
+				"organization":" Kandy Hospital",
+				"position": " ",
+				"name":      " A.C.H. Hemantha Perera",
+				"mobile":" 071 8678088"
+
+			},
+			{
+				"organization":" Kandy Hospital",
+				"position": " ",
+				"name":      " Thamara Ekanayaka",
+				"mobile":" 071 8254609"
+
+			},
+			{
+				"organization":" Kandy Hospital",
+				"position": " ",
+				"name":      " Swarna Airangani",
+				"mobile":" 077 1402478"
+
+			},
+			{
+				"organization":" Kandy Hospital",
+				"position": " ",
+				"name":      " Nalini Amarasinghe",
+				"mobile":" 071 4214030"
+
+			},
+			{
+				"organization":" Kandy Hospital",
+				"position": " ",
+				"name":      " Radhika Fernando",
+				"mobile":" 071 8157009"
+
+			},
+			{
+				"organization":" Kandy Hospital",
+				"position": " ",
+				"name":      " M.P. Kulathunga",
+				"mobile":" 071 6859601"
+
+			},
+			{
+				"organization":" Kandy Hospital",
+				"position": " ",
+				"name":      " S.M.U.K. Samaranayaka",
+				"mobile":" 071 1055761"
+
+			}
+		]
+	},
+	{
+		"Organization":" Abans ",
+		"Contact"		:[
+			{
+				"organization":" Abans ",
+				"position": " Sectional Head",
+				"name":      " Indunil Illeperuma",
+				"office":" 011 45001268",
+				"mobile":" 071 8623428"
+
+			}
+		]
+	},
+	{
+		"Organization":" Fire Rescue Unit",
+		"Contact"		:[
+			{
+				"organization":" Fire Rescue Unit",
+				"position": " Municipal Commissioner",
+				"name":      " Chandana Thennakoon",
+				"office":" 081 2223921",
+				"mobile":" 071 7810990"
+
+			},
+			{
+				"organization"  :   "Fire Rescue Unit",
+				"position": " ",
+				"name":      " N.D. Dissanayaka",
+				"office":" 081 2224444",
+				"mobile":" 071 6250055"
+
+			},
+			{
+				"organization"  :   "Fire Rescue Unit",
+				"position": " ",
+				"name":      " S.K.S. Dasanayaka",
+				"office":" 081 2224444",
+				"mobile":" 071 8033077"
+
+			},
+			{
+				"organization"  :   "Fire Rescue Unit",
+				"position"		:	" ",
+				"name"			:   " M.A.M. Dias",
+				"office"		:	" 081 2204844",
+				"mobile"		:	" 077 6931975"
+
+			},
+			{
+				"organization"  :   "Fire Rescue Unit",
+				"position"		: 	" ",
+				"name"			:  	" Shantha Bamunu",
+				"office"		:	" 081 2224444",
+				"mobile"		:	" 071 8230411"
+
+			},
+			{
+				"organization"  :   "Fire Rescue Unit",
+				"position"    	: 	" ",
+				"name"         	: 	" W.M.T.K. Weerakoon",
+				"office"		: 	" 081 2224444",
+				"mobile"		: 	" 077 6295005"
+
+			}
+		]
+	},
+	{
+		"Organization" 	: 	" Sri Lanka Transport Board",
+		"Contact"		:[
+			{
+				"organization" 	: 	" Sri Lanka Transport Board",
+				"position"    	: 	" Manager",
+				"name"         	: 	" H.M.W. Aberathne",
+				"office"		: 	" 081 2213590",
+				"mobile"		: 	" 077 1057000"
+
+			}
+		]
+	}
+
+]

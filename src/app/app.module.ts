@@ -14,7 +14,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { MapLayerComponent } from '../components/map-layer/map-layer';
-
+import { HttpModule } from '@angular/http';
+import { SubContactPage } from '../pages/sub-contact/sub-contact'
 @NgModule({
   declarations: [
     MyApp,
@@ -22,6 +23,7 @@ import { MapLayerComponent } from '../components/map-layer/map-layer';
     MapPage,
     HomePage,
     TabsPage,
+    SubContactPage,
     MapLayerComponent
 
   ],
@@ -29,7 +31,8 @@ import { MapLayerComponent } from '../components/map-layer/map-layer';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     RandoliPageModule,
-    ViewspotsPageModule
+    ViewspotsPageModule,
+    HttpModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -38,6 +41,7 @@ import { MapLayerComponent } from '../components/map-layer/map-layer';
     MapPage,
     HomePage,
     TabsPage,
+    SubContactPage,
     MapLayerComponent
   ],
   providers: [

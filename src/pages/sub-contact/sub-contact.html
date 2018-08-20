@@ -1,0 +1,40 @@
+<!--
+  Generated template for the SubContactPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{contacts[0].organization}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-padding>
+    <ion-grid>
+        <ion-row >
+          <ion-col *ngFor="let contact of contacts"  col-sm-12 col-lg-4 col-md-6 align-self-stretch>
+              <ion-card>
+                  <ion-card-header>
+                      <h2> {{contact.name}}</h2>
+                      <p>{{contact.position}}</p>
+                    </ion-card-header>
+                    <ion-card-content>
+
+                      <a href="tel:{{contact.office}}" ion-button icon-start *ngIf="contact.office" >
+                          <ion-icon name="call"></ion-icon>
+                        {{contact.office}}
+                      </a>
+                      <a href="tel:{{contact.mobile}}" ion-button icon-start *ngIf="contact.mobile">
+                          <ion-icon name="phone-portrait"></ion-icon>
+                          {{contact.mobile}}
+                      </a>
+                    </ion-card-content>
+              </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-content>

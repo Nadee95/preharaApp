@@ -18,25 +18,42 @@
   </ion-fab>
 
   <ion-list>
-
+<ion-row>
+  <ion-col col-sm col-lg-6>
+      <ion-card >
+          <ion-slides   autoplay="3000" loop="true" speed="1000" class="slides" pager="true" >
+              <ion-slide *ngFor="let img of images">  
+                <img style="" src="assets/imgs/{{img}}" class="thumb-img">
+              </ion-slide>
+          </ion-slides>  
+          <ion-card-content>
+            <ion-card-title>
+              Esala Perahara
+          </ion-card-title>
+          <p>
+            The month of July which is also called “ Esala ”, is  considered as a month of celebrations and festivity among most of Sri Lankans. It is also considered as the beginning of the rainy season for Sri Lankan up country. Since the 6th BC, Esala festival had been held to celebrate Buddha's special life events 
+          </p>
+    
+           <button ion-button (click)="btnClick()">Read more>> </button>
+          </ion-card-content>
+        </ion-card>
+  </ion-col>
+  <ion-col col-sm col-lg-6>
     <ion-card>
-      <ion-slides   autoplay="3000" loop="true" speed="1000" class="slides" pager="true" >
-          <ion-slide *ngFor="let img of images">  
-            <img style="" src="assets/imgs/{{img}}" class="thumb-img">
-          </ion-slide>
-      </ion-slides>  
-      <ion-card-content>
-        <ion-card-title>
-          Esala Perahara
-      </ion-card-title>
-      <p style="font-size: 2rem">
-        The month of July which is also called “ Esala ”, is  considered as a month of celebrations and festivity among most of Sri Lankans. It is also considered as the beginning of the rainy season for Sri Lankan up country. Since the 6th BC, Esala festival had been held to celebrate Buddha's special life events 
-      </p>
-
-       <button ion-button (click)="btnClick()">Read more>> </button>
-      </ion-card-content>
-    </ion-card>
-
+              <img style="" src="assets/imgs/history_1.png" class="thumb-img">
+       <ion-card-content>
+          <ion-card-title>
+            History
+        </ion-card-title>
+        <p>
+          The month of July which is also called “ Esala ”, is  considered as a month of celebrations and festivity among most of Sri Lankans. It is also considered as the beginning of the rainy season for Sri Lankan up country. Since the 6th BC, Esala festival had been held to celebrate Buddha's special life events 
+        </p>
+  
+         <button ion-button (click)="btnClick()">Read more>> </button>
+        </ion-card-content>
+      </ion-card>
+      </ion-col>
+    </ion-row>
   <ion-card>
     <ion-card-header>
       More Features Coming Soon... Stay Tuned

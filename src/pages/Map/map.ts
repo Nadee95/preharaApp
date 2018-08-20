@@ -59,7 +59,7 @@ export class MapPage {
       center: {lat: 7.2960452, lng: 80.6360764}
     });
 
-    var kmlLayer = new google.maps.KmlLayer(" https://sites.google.com/site/peraharagis/Day02.kmz", {
+    var kmlLayer = new google.maps.KmlLayer("http://perahara2018.000webhostapp.com/Day02.kmz", {
       preserveViewport: false,
       map: this.map
     });
