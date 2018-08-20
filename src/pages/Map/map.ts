@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
 import { PopoverController } from 'ionic-angular';
 import { MapLayerComponent } from '../../components/map-layer/map-layer';
-
+import { ModalController } from 'ionic-angular';
 declare var google;
 
 
@@ -28,14 +28,14 @@ export class MapPage {
   d9 = new google.maps.Data();
   d10 = new google.maps.Data();
   d11 = new google.maps.Data();
-  currentMap = this.d1;
+  currentMap: any;
   currentState: any={
     //route:"d1",
     poi:"true"
   }
 
 //public navCtrl: NavController
-  constructor(public navCtrl:NavController,private toastCtrl: ToastController,public popoverCtrl: PopoverController) {
+  constructor(public navCtrl:NavController,private toastCtrl: ToastController,public popoverCtrl: PopoverController, public modalCtrl: ModalController) {
 
   }
   ionViewDidLoad(){
@@ -59,11 +59,12 @@ export class MapPage {
       center: {lat: 7.2960452, lng: 80.6360764}
     });
 
-    var kmlLayer = new google.maps.KmlLayer("http://perahara2018.000webhostapp.com/Day02.kmz", {
+    this.currentMap = new google.maps.KmlLayer("http://perahara2018.000webhostapp.com/Day02.kmz", {
       preserveViewport: false,
       map: this.map
     });
-    kmlLayer.addListener('click', function(event) {
+    
+    this.currentMap.addListener('click', function(event) {
       var content = event.featureData.infoWindowHtml;
       var testimonial = document.getElementById('capture');
       testimonial.innerHTML = content;
@@ -79,17 +80,20 @@ export class MapPage {
     });
     toast.present();
   }
+  loadMap(route){
+    this.currentMap.setOptions({url:"http://perahara2018.000webhostapp.com/"+route});
+  }
+  presentModal() {
+    const modal = this.modalCtrl.create(MapLayerComponent,{data:this.currentState},{enableBackdropDismiss:false});
+    modal.present();
 
-  presentPopover(myEvent) {
-    let popover = this.popoverCtrl.create(MapLayerComponent,{data:this.currentState},{enableBackdropDismiss:false});
-    popover.present({
-      ev: myEvent
-    });
-
-    popover.onDidDismiss(datax =>{
+    modal.onDidDismiss(datax =>{
+      console.log(this.currentState);
+      if(this.currentState.route != datax.route){
+        this.loadMap(datax.route);
+      }
       this.currentState = datax;
       if(!datax.poi){
-        
          this.map.setOptions({styles: [
           {
             featureType: 'poi.business',
@@ -106,18 +110,9 @@ export class MapPage {
       }else{
         this.map.setOptions({styles: null});
       }
-     /* if (datax.route == 'd1'){
-        this.currentMap.setMap(null);
-        this.d1.setMap(this.map);
-        this.currentMap=this.d1;
-      }else if(datax.route == 'd2'){
-        this.currentMap.setMap(null);
-        this.d2.setMap(this.map);
-        this.currentMap.setMap(this.d2);
-        
-      }*/
     })
   }
+
 
 
 }

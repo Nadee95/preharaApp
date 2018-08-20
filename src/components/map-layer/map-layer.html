@@ -1,38 +1,49 @@
 <!-- Generated template for the MapLayerComponent component -->
+<ion-header>
+    <ion-navbar>
+        <ion-title>Map Options</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="dismiss()">
+                <ion-icon item-right name="ios-close-outline"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content>
 <form [formGroup]="todo" (ngSubmit)="logForm()">
-<!--
+
   <ion-list radio-group formControlName="route">
       <ion-list-header>
       Routes
     </ion-list-header>
        <ion-item>
-        <ion-label>Day 1</ion-label>
-        <ion-radio value="d1" checked></ion-radio>
+             <ion-label>Day 1</ion-label>
+          <ion-radio value="d1" disabled></ion-radio>
       </ion-item>
     
       <ion-item>
         <ion-label>Day 2</ion-label>
-        <ion-radio value="d2"></ion-radio>
+        <ion-radio value="d2" disabled></ion-radio>
       </ion-item>
     
       <ion-item>
         <ion-label>Day 3</ion-label>
-        <ion-radio value="d3.json"></ion-radio>
+        <ion-radio value="d3.json" disabled></ion-radio>
       </ion-item>
 
       <ion-item>
         <ion-label>Day 4</ion-label>
-        <ion-radio value="d4.json"></ion-radio>
+        <ion-radio value="d4.json" disabled></ion-radio>
       </ion-item>
 
       <ion-item>
-        <ion-label>Day 5</ion-label>
-        <ion-radio value="d5.json"></ion-radio>
+        <ion-label>Day 5 </ion-label>
+        <ion-radio value="Day05.kmz"></ion-radio>
       </ion-item>
 
       <ion-item>
         <ion-label>Day 6</ion-label>
-        <ion-radio value="d6.json"></ion-radio>
+        <ion-radio value="Day06.kmz"></ion-radio>
       </ion-item>
 
       <ion-item>
@@ -60,7 +71,6 @@
         <ion-radio value="d11.json"></ion-radio>
       </ion-item>
     </ion-list>
-  -->
     <ion-list>
 
         <ion-item>
@@ -69,5 +79,6 @@
         </ion-item>
       
       </ion-list>
-    <button ion-button (click)="submit()" [disabled]="!todo.valid">Submit</button>
+    <button ion-button (click)="dismiss()">Submit</button>
 </form>
+</ion-content>

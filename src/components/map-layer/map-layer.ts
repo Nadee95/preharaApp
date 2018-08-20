@@ -18,16 +18,18 @@ export class MapLayerComponent {
   constructor(private formBuilder: FormBuilder, public viewCtrl: ViewController, public navParams: NavParams) {
     this.state=this.navParams.get('data');
     this.todo = this.formBuilder.group({
-     // route: [this.state.route, Validators.required],
-      poi:[this.state.poi]
-    });
+    route: [this.state.route, Validators.required],
+    poi:[this.state.poi]
+});
 
   }
   logForm() {
-    console.log(this.todo.value)
+  //  console.log(this.todo.value)
   }
   submit() {
+   // this.viewCtrl.dismiss(this.todo.value);
+  }
+  dismiss() {
     this.viewCtrl.dismiss(this.todo.value);
   }
-
 }
