@@ -50,7 +50,7 @@ export class MapPage {
       center: { lat: 7.2960452, lng: 80.6360764 }
     });
 
-    this.currentMap = new google.maps.KmlLayer("http://perahara2018.000webhostapp.com/Day05.kmz", {
+    this.currentMap = new google.maps.KmlLayer("http://perahara2018.000webhostapp.com/Day06.kmz", {
       preserveViewport: false,
       map: this.map
     });
